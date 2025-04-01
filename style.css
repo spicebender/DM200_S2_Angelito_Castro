@@ -602,9 +602,9 @@ footer #socials a:active{
         gap: 0;
         color: var(--black);
         background-color: var(--white);
-        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%); /* angled edge */
         padding: 1rem 2rem;
         z-index: 2;
+        transition: clip-path 300ms ease-out;
     }
 
     .header.hidden nav a{
@@ -616,18 +616,20 @@ footer #socials a:active{
         transition: top 200ms ease-out;
         padding-top: 4rem;
         padding-bottom: 4rem;
-        transition: top 300ms ease-out, padding-bottom 300ms ease-out;
+        clip-path: polygon(0 0%, 100% 0%, 100% 98%, 0% 100%); /* angled edge */
+        transition: top 300ms ease-out, padding-bottom 300ms ease-out, clip-path 300ms ease-out;
     }
 
     #mobile-header.hidden{
         top: -21rem;
-        transition: top 300ms ease-out, padding-bottom 300ms ease-out;
+        transition: top 300ms ease-out, padding-bottom 300ms ease-out, clip-path 300ms ease-out;
     }
 
     #mobile-header.show{
         top:0%;
-        padding-bottom: 0rem;
-        transition: top 300ms ease-out, padding-bottom 300ms ease-out;
+        padding-bottom: 1rem;
+        transition: top 300ms ease-out, padding-bottom 300ms ease-out, clip-path 300ms ease-out;
+        clip-path: polygon(0 0%, 100% 0%, 100% 98%, 0% 80%)
     }
 
     #mobile-menu-btn{ 
