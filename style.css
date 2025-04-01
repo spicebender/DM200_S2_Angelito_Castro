@@ -759,16 +759,32 @@ footer #socials a:active{
         gap: 2vw;
     }
 
-    .about-mini hr{
-        margin: auto;
-    }
-
     .about-mini-card img{
         height: 20vw;
     }
 
+    .about-mini-text{
+        gap: 0vw;
+    }
+
+    .about-mini hr{
+        margin: auto;
+    }
+
+    .about-mini-text p{
+        margin-bottom: 6vw;
+    }
+
+
     .about-mini-buttons{
         justify-content: center;
+        margin-top: 0;
+        gap: 4vw;
+        /* background-color: aqua; */
+    }
+
+    .about-mini-buttons div{
+        margin-top: 0vw;
     }
 
     /* MINI GALLERY */
