@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETHAN BECKER | Gallery</title>
+    <title>ETHAN BECKER | Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/nul2gdm.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" type="image/x-icon" href="images/EB-Favicon.png">
     <!-- Bust Cache for Git? -->
-    <link href="{{ "/css/main.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" rel="stylesheet">
+    <!-- <link href="{{ "/css/main.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" rel="stylesheet"> -->
 </head>
 
 <body>
 
     <!-- NAVIGATION BAR -->
 
-    <!-- Mobile -->
+    <!-- MOBILE MENU -->
     <div id="mobile-menu-btn">
-        <input type="checkbox" id="checkbox" onclick="toggleMobileMenu()">
+        <input type="checkbox" id="checkbox" onclick="toggleMobileMenu()"  aria-label="Open Mobile Navigation Menu">
         <label for="checkbox" class="toggle">
-            <div class="bars" id="bar1"></div>
-            <div class="bars" id="bar2"></div>
-            <div class="bars" id="bar3"></div>
+            <span class="bars" id="bar1"></span>
+            <span class="bars" id="bar2"></span>
+            <span class="bars" id="bar3"></span>
         </label>
     </div>
 
@@ -35,13 +35,13 @@
     
     <header class="header hidden" id="mobile-header">
         <div class="logo">
-          <a href="index.html"><img src="images/EB-Logo.png" alt="Ethan Becker Logo"></a>
+          <a href="index.html" aria-label="Go to Home Page"><img src="images/EB-Logo.png" alt="Ethan Becker Logo"></a>
         </div>
         <nav class="main-nav">
-            <a href="index.html" id="active">HOME</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="about.html">ABOUT</a></li>
-            <a href="contact.html">CONTACT</a>
+            <a href="index.html" id="active" aria-label="Go to Home Page">HOME</a>
+            <a href="gallery.html" aria-label="Go to Gallery Page">GALLERY</a>
+            <a href="about.html" aria-label="Go to About Page">ABOUT</a>
+            <a href="contact.html" aria-label="Go to Contact Page">CONTACT</a>
         </nav>
     </header>
     
@@ -71,21 +71,21 @@
     <!-- HERO BANNER -->
 
     <section class="hero-banner">
-        <div class="strip-top">
+        <div class="strip-top" aria-label="Film Strip of Cinematic Work 1">
             <!-- <img src="images/strip-top.png" alt="Film Strip of Cinematic Work"> -->
         </div>
         <div class="hero-text">
-            <h2>i bring stories to</h2>
+            <h2>I bring stories to</h2>
             <h2 id="hero-life">life</h2>
         </div>
-        <div class="strip-bottom">
+        <div class="strip-bottom" aria-label="Film Strip of Cinematic Work 2">
             <!-- <img src="images/strip-bottom.png" alt="Film Strip of Cinematic Work"> -->
         </div>
     </section>
 
     <!-- MINI ABOUT -->
 
-    <section class="about-mini">
+    <!-- <section class="about-mini">
         <div class="about-mini-card">
             <img src="images/EB-Profile.png" alt="Ethan Becker Headshot">
             <div class="about-mini-text">
@@ -98,16 +98,16 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- MINI GALLERY -->
 
     <div id="gallery-mini-container">
         <section class="gallery-mini">
-            <a href="gallery.html"><img src="images/mini-gal-1.png" alt=""><div><h2>Visual Development</h2></div></a>
-            <a href="gallery.html#gal-cd"><img src="images/mini-gal-2.png" alt=""><div><h2>Character Design</h2></div></a>
-            <a href="gallery.html#gal-dlq"><img src="images/mini-gal-3.png" alt=""><div><h2>DELINQUENTS</h2></div></a>
-            <a href="gallery.html#gal-cp"><img src="images/mini-gal-4.png" alt=""><div><h2>Portraits</h2></div></a>
+            <a href="gallery.html" aria-label="Go to Visual Development Section of Gallery Page"><img src="images/mini-gal-1.png" loading="lazy" alt="Visual Development Artwork"><div><h2>Visual Development</h2></div></a>
+            <a href="gallery.html#gal-cd" aria-label="Go to Character Design Section of Gallery Page"><img src="images/mini-gal-2.png" loading="lazy" alt="Character Design Artwork"><div><h2>Character Design</h2></div></a>
+            <a href="gallery.html#gal-dlq" aria-label="Go to DELINQUENTS Section of Gallery Page"><img src="images/mini-gal-3.png" loading="lazy" alt="DELINQUENTS Artwork"><div><h2>DELINQUENTS</h2></div></a>
+            <a href="gallery.html#gal-cp" aria-label="Go to Character Portraits Section of Gallery Page"><img src="images/mini-gal-4.png" loading="lazy" alt="Character Portraits Artwork"><div><h2>Portraits</h2></div></a>
         </section>
     </div>
 
@@ -115,30 +115,28 @@
 
     <footer>
         <div class="footer-left">
-          <h2>Ethan Becker © 2025</h2>
-          <p>Site designed by Angelito Castro. All images are used under presumptive license for non-commercial, educational use.</p>
+            <h1>Ethan Becker © 2025</h1> <!-- H1 for SEO-->
+            <p>Site designed by Angelito Castro. All images are used under presumptive license for non-commercial, educational use.</p>
         </div>
       
         <div class="footer-right">
-          <div>
             <div id="socials">
-                <a href="https://www.instagram.com/ethanbecker70/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@EthanBecker70" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.deviantart.com/ethanbecker70" target="_blank"><i class="fa-brands fa-deviantart"></i></a>
-                <a href="https://ethanbecker70.tumblr.com/" target="_blank"><i class="fa-brands fa-tumblr"></i></a>
+                <a href="https://www.instagram.com/ethanbecker70/" target="_blank" aria-label="Go to Ethan Becker's Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@EthanBecker70" target="_blank" aria-label="Go to Ethan Becker's Youtube Channel"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://discord.com/invite/ethanbecker" target="_blank" aria-label="Go to Ethan Becker's Discord Community"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://ethanbecker70.tumblr.com/" target="_blank" aria-label="Go to Ethan Becker's Tumblr"><i class="fa-brands fa-tumblr"></i></a>
             </div> 
-          </div>
-          <div class="footer-nav">
-            <a href="index.html">Home</a>
-            <hr>
-            <a href="gallery.html">Gallery</a>
-            <hr>
-            <a href="about.html">About</a>
-            <hr>
-            <a href="contact.html">Contact</a>
-          </nav>
+            <div class="footer-nav">
+                <a href="index.html" aria-label="Go to Home Page">Home</a>
+                <hr>
+                <a href="gallery.html" aria-label="Go to Gallery Page">Gallery</a>
+                <hr>
+                <a href="about.html" aria-label="Go to About Page">About</a>
+                <hr>
+                <a href="contact.html" aria-label="Go to Contact Page">Contact</a>
+            </div>
         </div>
-      </footer>
+    </footer>
 
 </body>
 </html>
