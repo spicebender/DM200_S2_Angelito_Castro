@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/nul2gdm.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" type="image/x-icon" href="images/EB-Favicon.png">
+
 </head>
 
 <body>
@@ -53,31 +54,12 @@
             <a href="contact.html" aria-label="Go to Contact Page">CONTACT</a>
         </nav>
     </header>
-    
-    <script>
-        // Mobile Menu Button
-        const navbar = document.getElementById('mobile-header')
 
-        function toggleMobileMenu(){
-            if (navbar.classList.contains('show')) {
-                navbar.classList.remove('show');
-            }else{
-                navbar.classList.add('show');
-            }
-        }
-
-        // Make Header Appear
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 5) {
-            header.classList.remove('hidden');
-            } else {
-            header.classList.add('hidden');
-            }
-        });
-    </script>
+    <script src="myscripts.js"></script>
 
     <!-- HERO BANNER -->
+
+    <!-- Only warnings about the use of aria label, which I deem to be correct usage here. They are for two images which do not have alt text, as they are background images of divs. -->
 
     <section class="hero-banner">
         <div class="strip-top" aria-label="Film Strip of Cinematic Work 1">

@@ -39,7 +39,7 @@ body{
 button:focus, a:focus {
     outline: 0.1rem solid var(--red);
     outline-offset: 0.2rem;
-  }
+}
 
 /* ----- NAVIGATION BAR ----- */
 
@@ -148,6 +148,7 @@ button:focus, a:focus {
     align-items: center;
     overflow: hidden;
     height: 70vh;
+    margin-top: 0.5rem;
     will-change: transform;  /* To help with Performance */
 }
 
