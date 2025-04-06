@@ -157,7 +157,7 @@ button:focus, a:focus {
 
 .strip-top, .strip-bottom{
     height: 40vh;
-    width: 1000%;
+    width: 10000%;
     background-size: contain;
     background-position: center;
     box-shadow: 0 0 0.5rem var(--white);
@@ -568,7 +568,7 @@ button:focus, a:focus {
 
 .about-poster-scroll{
     height: 30vh;
-    width: 1000%;
+    width: 10000%;
     animation: scrollPosters 120s linear infinite alternate;
     background-image: url(images/poster-strip.png);
     background-size: contain;
@@ -716,7 +716,7 @@ button:focus, a:focus {
     align-self: center;
     gap: 3rem;
     padding: 3rem;
-    width: 70vw;
+    width: 76vw;
 }
 
 .contact-left{
@@ -730,7 +730,7 @@ button:focus, a:focus {
 }
 
 .contact h2{
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 700;
     font-style: italic;
     margin-top: 0;
@@ -740,7 +740,7 @@ button:focus, a:focus {
 
 .contact hr{
     border: 0.1rem solid var(--red);
-    width: 22rem;
+    width: 24rem;
     margin: 0;
     margin-top: 0.2rem;
     margin-bottom: 1rem;
@@ -761,6 +761,10 @@ button:focus, a:focus {
   font-size: 1rem;
   font-family: inherit;
   outline: none;
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+    outline: 0.1rem solid var(--red);
 }
 
 .contact-form textarea {
@@ -1080,7 +1084,7 @@ footer #socials a:active{
     #mobile-logo{
         display: block;
         position: fixed;
-        z-index: 10000000;
+        z-index: 10;
         top: 0.8rem;
         left: 1.2rem;
     }
@@ -1091,7 +1095,7 @@ footer #socials a:active{
         gap: 0;
         padding-top: 0.4rem;
         padding-bottom: 0.5rem;
-        z-index: 100000;
+        z-index: 10000;
     }
 
     .main-nav a, .main-nav button{
