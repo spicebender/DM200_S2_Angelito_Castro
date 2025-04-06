@@ -230,98 +230,6 @@ button:focus, a:focus {
     text-shadow: 0 0 1rem var(--red);
 }
 
-/* ----- MINI ABOUT SECTION ----- */
-
-.about-mini{
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
-    margin-bottom: 2rem;
-}
-
-.about-mini-card{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 37rem;
-    min-width: 25rem;
-    gap: 2rem;
-    padding: 2rem;
-    border: 0.2rem solid var(--white);
-    border-radius: 3rem;
-    color: var(--white);
-}
-
-.about-mini-card img{
-    height: 10rem;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 0.5rem var(--white);;
-}
-
-.about-mini-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
-
-.about-mini-text h2{
-    font-size: 2rem;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 0;
-    margin-bottom: 1.2rem;
-}
-
-  .about-mini-text hr{
-    border: 0.1rem solid var(--red);
-    width: 11.3rem;
-    margin: 0;
-}
-
-.about-mini-text p{
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-.about-mini-buttons{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 2rem;
-}
-
-.about-mini-buttons div a{
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: var(--white);
-    background-color: var(--red);
-    padding: 0.4rem 0.8rem;
-    transition: 0.2s ease;
-    clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 95%);
-    white-space: nowrap;
-    display: inline-block;
-}
-
-#about-mini-contact-btn{
-    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
-}
-
-.about-mini-buttons div a:hover{
-    color: var(--red);
-    background: rgba(0,0,0,0);
-    outline: 0.2rem solid var(--red);
-    outline-offset: -0.2rem;
-    transform: scale(1.05);
-}
-
-.about-mini-buttons div a:active{
-    transform: scale(0.95);
-}
-
 /* ----- MINI GALLERY ----- */
 
 #gallery-mini-container{
@@ -569,7 +477,7 @@ button:focus, a:focus {
 .about-poster-scroll{
     height: 30vh;
     width: 10000%;
-    animation: scrollPosters 120s linear infinite alternate;
+    animation: scrollPosters 800s linear infinite alternate;
     background-image: url(images/poster-strip.png);
     background-size: contain;
     background-position: center;
