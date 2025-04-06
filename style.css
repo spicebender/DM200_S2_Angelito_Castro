@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body{
@@ -22,6 +23,11 @@ body{
     background-size: cover;
     background-blend-mode: multiply;
     background-position: center;
+
+    /* To Fix Floating Footer */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 @font-face {
@@ -323,6 +329,7 @@ button:focus, a:focus {
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .gallery-mini{
@@ -401,6 +408,7 @@ button:focus, a:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .gallery h3{
@@ -675,6 +683,7 @@ button:focus, a:focus {
     align-items: center;
     padding: min(3rem, 8vw);
     margin: 1.2rem 3rem;
+    margin-bottom: 3rem;
     border: 0.1rem solid var(--white);
     border-radius: 3rem;
     gap: 0.3rem;
@@ -704,8 +713,10 @@ button:focus, a:focus {
 .contact{
     color: var(--white); 
     display: flex;
+    align-self: center;
     gap: 3rem;
     padding: 3rem;
+    width: 70vw;
 }
 
 .contact-left{
@@ -753,7 +764,8 @@ button:focus, a:focus {
 }
 
 .contact-form textarea {
-    height: 10rem;
+    height: 12rem;
+    width: auto;
     resize: vertical;
 }
 
@@ -866,7 +878,7 @@ footer{
     gap: 3rem;
     padding: 1rem 3rem;
     background-color: var(--white);
-    margin-top: 2rem;
+    margin-top: auto;
     clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -1241,7 +1253,7 @@ footer #socials a:active{
     }
 
     .contact-left{
-        width: 85vw;
+        width: min(85vw, 36rem);
     }
 
     .contact-left h2{
